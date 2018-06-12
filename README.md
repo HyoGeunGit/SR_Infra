@@ -1,2 +1,2 @@
-# SIM
-Spirit in Motion - 역동치는 영혼
+# Sunrin Infra
+선린 인프라 (선린 생활 편안하게 해주자아아아아아아아~ 후배님들 ^^7)
