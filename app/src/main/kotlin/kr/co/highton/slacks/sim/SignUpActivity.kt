@@ -24,7 +24,7 @@ class SignUpActivity : BaseActivity() {
                             Toast.makeText(this@SignUpActivity, "회원가입 성공", Toast.LENGTH_LONG).show()
                             finish ()
                         }
-                        405 -> Toast.makeText(this@SignUpActivity, "회원가입 실패 : 아이디나 비번이 올바르지 않습니다", Toast.LENGTH_LONG).show()
+                        405 -> Toast.makeText(this@SignUpActivity, "회원가입 실패 : 사용할 수 없는 아이디, 비밀번호입니다.", Toast.LENGTH_LONG).show()
                         500 -> Toast.makeText(this@SignUpActivity, "회원가입 실패 : 서버 오류", Toast.LENGTH_LONG).show()
                     }
                 }

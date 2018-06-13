@@ -7,6 +7,7 @@ import com.google.android.gms.common.api.Api
 import com.gun0912.tedpermission.PermissionListener
 import com.gun0912.tedpermission.TedPermission
 import kotlinx.android.synthetic.main.activity_login.*
+import kr.co.highton.slacks.sim.R.id.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -26,12 +27,11 @@ class LoginActivity : BaseActivity() {
                 }
         }
         logo.bringToFront()
-
         login_btn.setOnClickListener {
-            if (id_tv.text.toString()=="1234"||pw_tv.text.toString()=="1234"){
-                startActivity (Intent(this@LoginActivity, MainActivity::class.java))
-            }
-           /* Client.retrofitService.logIn(id_tv.text.toString(), pw_tv.text.toString()).enqueue(object : Callback<Void> {
+//            if (id_tv.text.toString()=="1234"||pw_tv.text.toString()=="1234"){
+//                startActivity (Intent(this@LoginActivity, MainActivity::class.java))
+//            }
+           Client.retrofitService.logIn(id_tv.text.toString(), pw_tv.text.toString()).enqueue(object : Callback<Void> {
                 override fun onResponse(call: Call<Void>?, response: Response<Void>?) {
                     when (response!!.code()) {
                         200 -> {
@@ -48,7 +48,7 @@ class LoginActivity : BaseActivity() {
                 }
 
 
-            })*/
+            })
         }
 
         signup_go.setOnClickListener { startActivity(Intent(this@LoginActivity, SignUpActivity::class.java)) }

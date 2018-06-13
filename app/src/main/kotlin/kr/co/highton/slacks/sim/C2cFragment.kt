@@ -27,6 +27,7 @@ class C2cFragment : Fragment() {
         view.fab.setOnClickListener {
             items += Data("질문", "작성자", "1분 전", "질문있습니다!")
             recyclerView!!.adapter.notifyDataSetChanged()
+            recyclerView!!.smoothScrollToPosition(0)
         }
         recyclerView = view!!.findViewById(R.id.recyclerView)
         recyclerView!!.setHasFixedSize(true)

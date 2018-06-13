@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">SR-Infra</string>
     <string name="press_back_button_one_more">뒤로가기 버튼을 한번 더 누르시면 종료됩니다.</string>
+    <string name="nav_header_title">선린 인쁘라</string>
+    <string name="nav_header_subtitle">노예1, 노예2, 노예3, 노예4</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>

@@ -15,4 +15,8 @@ class TipFragment : Fragment() {
 
         return inflater.inflate(R.layout.fragment_tip, container, false)
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+    }
 }
